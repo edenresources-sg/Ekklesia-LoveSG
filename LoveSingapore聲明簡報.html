@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>愛新加坡 LoveSingapore 的聲明</title>
+<style>
+  :root{
+    --bg:#0f1923; --card:#16242f; --accent:#c9a96a; --accent2:#7fb3d5;
+    --text:#e8e6e1; --muted:#9aa7b0; --red:#c0736a;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{height:100%;overflow:hidden;background:var(--bg);font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif;color:var(--text);}
+  .slide{
+    position:absolute;inset:0;display:none;flex-direction:column;justify-content:center;
+    padding:6vh 8vw;overflow-y:auto;
+  }
+  .slide.active{display:flex;animation:fade .45s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:none;}}
+  .kicker{color:var(--accent);font-size:.95rem;letter-spacing:.25em;text-transform:uppercase;margin-bottom:1rem;}
+  h1{font-size:clamp(1.8rem,4.5vw,3.2rem);line-height:1.3;margin-bottom:1.2rem;}
+  h2{font-size:clamp(1.4rem,3.2vw,2.2rem);margin-bottom:1.6rem;color:#fff;}
+  h2 .num{color:var(--accent);margin-right:.5em;font-weight:400;}
+  p{font-size:clamp(1rem,1.6vw,1.2rem);line-height:1.9;color:var(--text);max-width:60ch;}
+  .lead{font-size:clamp(1.1rem,2vw,1.45rem);line-height:2;max-width:56ch;}
+  .muted{color:var(--muted);}
+  .accent{color:var(--accent);}
+  .cards{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:.5rem;}
+  .card{background:var(--card);border-left:3px solid var(--accent);border-radius:10px;padding:1.4rem 1.5rem;}
+  .card h3{font-size:1.1rem;color:var(--accent);margin-bottom:.7rem;}
+  .card p{font-size:1rem;line-height:1.8;}
+  .vs{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:.5rem;}
+  .vs .card.old{border-left-color:var(--red);}
+  .vs .card.old h3{color:var(--red);}
+  .vs .card.new{border-left-color:var(--accent2);}
+  .vs .card.new h3{color:var(--accent2);}
+  ol.rules{list-style:none;counter-reset:r;margin-top:.4rem;}
+  ol.rules li{
+    counter-increment:r;display:flex;gap:1rem;align-items:flex-start;
+    background:var(--card);border-radius:10px;padding:1rem 1.3rem;margin-bottom:.8rem;
+    font-size:clamp(.95rem,1.5vw,1.1rem);line-height:1.8;max-width:70ch;
+  }
+  ol.rules li::before{
+    content:counter(r);flex:0 0 2rem;height:2rem;border-radius:50%;
+    background:var(--accent);color:#0f1923;font-weight:700;
+    display:flex;align-items:center;justify-content:center;margin-top:.15rem;
+  }
+  .quote{
+    border-left:3px solid var(--accent);padding:1rem 1.5rem;background:var(--card);
+    border-radius:0 10px 10px 0;margin-top:1.4rem;font-size:clamp(1rem,1.7vw,1.25rem);
+    line-height:1.95;max-width:62ch;
+  }
+  .stat{font-size:clamp(2.6rem,7vw,5rem);font-weight:700;color:var(--accent);line-height:1.1;}
+  .statrow{display:flex;gap:4rem;flex-wrap:wrap;margin:1.4rem 0;}
+  .statrow .label{color:var(--muted);font-size:1rem;margin-top:.4rem;max-width:22ch;line-height:1.6;}
+  .nav{
+    position:fixed;bottom:1.4rem;right:2rem;display:flex;gap:.6rem;align-items:center;
+    color:var(--muted);font-size:.9rem;z-index:10;
+  }
+  .nav button{
+    background:var(--card);border:1px solid #2c3e4a;color:var(--text);
+    width:2.6rem;height:2.6rem;border-radius:50%;font-size:1.1rem;cursor:pointer;
+  }
+  .nav button:hover{border-color:var(--accent);color:var(--accent);}
+  .progress{position:fixed;top:0;left:0;height:3px;background:var(--accent);transition:width .3s;z-index:10;}
+  .pagenum{position:fixed;bottom:1.8rem;left:2rem;color:var(--muted);font-size:.85rem;letter-spacing:.1em;z-index:10;}
+  @media(max-width:640px){.vs{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<!-- 1 封面 -->
+<section class="slide active">
+  <div class="kicker">聲明摘要 · 2026</div>
+  <h1>愛新加坡 LoveSingapore<br>關於《耶穌基督超級巨星》的聲明</h1>
+  <p class="lead muted">核心立場：對政府讓該劇照常上演感到<span class="accent">失望</span>——因為該劇歪曲了主耶穌基督；但<span class="accent">接受結果，不要求禁演</span>。</p>
+</section>
+
+<!-- 2 三個支撐點 -->
+<section class="slide">
+  <h2><span class="num">01</span>三個支撐點</h2>
+  <div class="cards">
+    <div class="card"><h3>民意基礎</h3><p>調查 180 位教會領袖，92% 表示擔憂（68% 非常擔憂）。約半數受訪者在 40 歲或以下——這不是少數或年長者的意見。</p></div>
+    <div class="card"><h3>唯一具體訴求</h3><p>免責聲明與 Advisory 16 分級不應只在場館和售票平台出現，須擴及所有公開宣傳材料：電視、網絡廣告、海報、現場裝置。</p></div>
+    <div class="card"><h3>原則申明</h3><p>基督徒不是要特殊待遇，而是所有宗教的神聖人物都應獲同等尊重。</p></div>
+  </div>
+</section>
+
+<!-- 3 民調數字 -->
+<section class="slide">
+  <h2><span class="num">02</span>民意基礎：數字</h2>
+  <div class="statrow">
+    <div><div class="stat">180</div><div class="label">受訪教會領袖</div></div>
+    <div><div class="stat">92%</div><div class="label">表示擔憂（其中 68% 非常擔憂）</div></div>
+    <div><div class="stat">~50%</div><div class="label">受訪者年齡在 40 歲或以下</div></div>
+  </div>
+  <p class="muted">顯示關切跨越世代，並非少數或年長群體的意見。</p>
+</section>
+
+<!-- 4 對內對外 -->
+<section class="slide">
+  <h2><span class="num">03</span>對內呼籲 · 對外姿態</h2>
+  <div class="vs">
+    <div class="card"><h3>對內</h3><p>呼籲信徒以辨別力應對；教會領袖引導會眾。</p></div>
+    <div class="card"><h3>對外</h3><p>感謝政府（特別是唐振輝部長）的磋商，承諾持續建設性對話。</p></div>
+  </div>
+</section>
+
+<!-- 5 1973 vs 2026 -->
+<section class="slide">
+  <h2><span class="num">04</span>背景：1973 與 2026 的差別</h2>
+  <p class="lead">當年禁令針對的是 <span class="accent">1973 年的電影版</span>（按 LoveSingapore 聲明所述，該禁令當年已被撤銷）。<span class="accent">2026 年</span>是就音樂劇現場演出作出的全新決定。</p>
+  <div class="quote">兩個年代的差別，主要在<strong>管制思維的轉變</strong>。</div>
+</section>
+
+<!-- 6 1970年代為何禁 -->
+<section class="slide">
+  <h2><span class="num">05</span>1970 年代為何禁？</h2>
+  <p>新加坡剛獨立不久，種族與宗教騷亂記憶猶新。政府對宗教敏感題材採取「直接禁止」的審查模式——只要可能冒犯某個宗教群體，就不准上映。</p>
+  <p style="margin-top:1rem;">《耶穌基督超級巨星》電影把耶穌描繪成有疑惑的凡人、不寫復活，被視為可能冒犯基督徒，所以禁。同期《大法師》等涉宗教爭議的影片也遭禁映。</p>
+</section>
+
+<!-- 7 2026年為何准 -->
+<section class="slide">
+  <h2><span class="num">06</span>2026 年為何准？</h2>
+  <p class="muted" style="margin-bottom:1.2rem;">不是因為內容不再敏感，而是<span class="accent">管制工具變了</span>——從「禁與不禁」的二元審查，轉為分級＋免責聲明＋事前磋商：</p>
+  <div class="cards">
+    <div class="card"><h3>分級制度</h3><p>IMDA 列為 Advisory 16，10 歲以下不得入場，判斷權交給成年觀眾。</p></div>
+    <div class="card"><h3>免責聲明</h3><p>主辦方 Base Entertainment 須在售票平台和場館聲明這是「戲劇化的藝術演繹」，非聖經的準確呈現。</p></div>
+    <div class="card"><h3>事前磋商</h3><p>政府機構主動與教會團體磋商、解釋分級思路，在藝術表達與宗教和諧之間取得平衡。</p></div>
+  </div>
+</section>
+
+<!-- 8 舊模式 vs 新模式 -->
+<section class="slide">
+  <h2><span class="num">07</span>管制思維：兩種模式</h2>
+  <div class="vs">
+    <div class="card old"><h3>舊模式：內容裁判</h3><p>1970 年代，政府自己判斷作品冒不冒犯宗教——替基督徒讀劇本、替穆斯林看電影，認為會冒犯就直接禁。政府站在門口，決定什麼可以進入公共空間。</p></div>
+    <div class="card new"><h3>新模式：場地管理員</h3><p>政府不再替任何群體判斷內容好壞，而是制定所有人都要遵守的規則，讓作品和反應在規則內自行發生。</p></div>
+  </div>
+</section>
+
+<!-- 9 新模式四規則 -->
+<section class="slide">
+  <h2><span class="num">08</span>新模式的四條規則</h2>
+  <ol class="rules">
+    <li><span><strong>分級</strong>（Advisory 16）——不禁止，但設門檻，讓觀眾自己決定看不看。</span></li>
+    <li><span><strong>強制標識</strong>（免責聲明）——作品可以演，但必須自我申明「這是藝術演繹，不是聖經」。</span></li>
+    <li><span><strong>磋商管道</strong>——宗教群體不滿可以表達，政府保證聽取並解釋，但表達要循體制內途徑。</span></li>
+    <li><span><strong>底線仍在</strong>——若內容越過貶低宗教、危害和諧的紅線，仍可拒絕分級。</span></li>
+  </ol>
+</section>
+
+<!-- 10 公共廣場論 -->
+<section class="slide">
+  <h2><span class="num">09</span>「公共廣場論」</h2>
+  <p>這正是 Alex Yam 文章所描述的轉變——公共廣場「不能專屬於任何一個群體，也不應把任何群體排除在外」。</p>
+  <p style="margin-top:1rem;">藝術家可以進場，教會也可以進場表達異議；政府管的不是誰說了什麼，而是大家用什麼方式共處。</p>
+  <div class="quote">比喻：以前政府是<strong>審稿的總編輯</strong>，決定什麼能刊登；現在更像<strong>論壇版主</strong>——不刪你的帖，但要求加警示標籤、開放別人回帖、人人不得人身攻擊。</div>
+</section>
+
+<!-- 11 結語 -->
+<section class="slide">
+  <div class="kicker">結語</div>
+  <h2>在新規則內爭取最大空間</h2>
+  <p class="lead">當政府退到「管理員」位置，就沒有人替宗教群體把關內容了。所以 LoveSingapore 要求至少把警示標籤<span class="accent">貼得更大、更廣</span>（擴及所有宣傳材料）——這是在新遊戲規則內能爭取的最大空間。</p>
+</section>
+
+<div class="progress" id="progress"></div>
+<div class="pagenum" id="pagenum"></div>
+<div class="nav">
+  <button id="prev" aria-label="上一頁">‹</button>
+  <button id="next" aria-label="下一頁">›</button>
+</div>
+
+<script>
+const slides=[...document.querySelectorAll('.slide')];let i=0;
+function show(n){
+  i=Math.max(0,Math.min(slides.length-1,n));
+  slides.forEach((s,j)=>s.classList.toggle('active',j===i));
+  document.getElementById('progress').style.width=((i+1)/slides.length*100)+'%';
+  document.getElementById('pagenum').textContent=(i+1)+' / '+slides.length;
+}
+document.getElementById('next').onclick=()=>show(i+1);
+document.getElementById('prev').onclick=()=>show(i-1);
+document.addEventListener('keydown',e=>{
+  if(['ArrowRight','ArrowDown','PageDown',' '].includes(e.key))show(i+1);
+  if(['ArrowLeft','ArrowUp','PageUp'].includes(e.key))show(i-1);
+  if(e.key==='Home')show(0);if(e.key==='End')show(slides.length-1);
+});
+let tx=0;
+document.addEventListener('touchstart',e=>tx=e.touches[0].clientX);
+document.addEventListener('touchend',e=>{
+  const d=e.changedTouches[0].clientX-tx;
+  if(d<-50)show(i+1);if(d>50)show(i-1);
+});
+show(0);
+</script>
+</body>
+</html>
